@@ -1,0 +1,26 @@
+.play-video{
+    flex-basis: 65%;
+    /* background-color: royalblue; */
+}
+
+
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.play-video .video{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+ .play-video .video iframe{
+    width: 100%;
+    border-radius: 14px;
+}
+.play-video .video h2{
+    font-size: 19px;
+    margin: 5px 0;
+}

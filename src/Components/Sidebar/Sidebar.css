@@ -1,0 +1,75 @@
+.sidebar{
+    width: 17%;
+    padding: 20px 18px;
+
+
+}
+.small-sidebar{
+   width:  6%;
+   padding: 20px 18px;
+
+}
+.small-sidebar .shorcut-links  .shorcut-link .sid-text{
+    display: none;
+}
+.small-sidebar .subscribed-list .sub-name{
+    display: none;
+}
+.small-sidebar  span{
+    display: none;
+}
+.sidebar .shorcut-links  .shorcut-link{
+    padding: 7px;
+    border-radius: 9px;
+  
+}
+.sidebar .shorcut-links  .shorcut-link:hover{
+    background-color: #eeeeeeb0;
+    cursor: pointer;
+}
+
+.sidebar .shorcut-links  .shorcut-link .sid-icon{
+    font-size: 23px;
+    margin-right: 18px;
+}
+
+.sidebar .shorcut-links  .shorcut-link .sid-text{
+    font-size: 14px;
+}
+.sidebar hr{
+    width: 60%;
+    margin: 5px 11px;
+    color: #eeeeeef5;
+}
+.sidebar span{
+    font-size:14px ;
+    font-weight: medium   ;
+    padding-left: 10px;
+    margin: 5px 0;
+    color: #6b6767 ;
+    
+}
+.sidebar .subscribed-list{
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 9px;
+  
+}
+.sidebar .subscribed-list:hover{
+    background-color: #eeeeeeb0;
+    cursor: pointer;
+}
+.sidebar .subscribed-list .sub-img{
+    width: 30px;
+    height: 30px;
+}
+.sidebar .subscribed-list .sub-img img{
+    width: 100%;
+    height: 100%;
+   border-radius: 100%;
+ 
+}
+.sidebar .subscribed-list .sub-name{
+    font-size: 14px;
+    margin-left: 15px;
+}

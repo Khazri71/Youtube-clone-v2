@@ -1,0 +1,11 @@
+.home{
+    display: flex;
+}
+.container{
+    padding: 20px 10px 20px 0;
+    width: 100%;
+}
+.large-container{
+    padding: 20px 10px 20px 0;
+    width: 100%;
+}
