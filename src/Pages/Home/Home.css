@@ -1,5 +1,6 @@
 .home{
     display: flex;
+    margin-top: 50px;
 }
 .container{
     padding: 20px 10px 20px 0;
@@ -8,4 +9,21 @@
 .large-container{
     padding: 20px 10px 20px 0;
     width: 100%;
+}
+
+/* Responsive */
+@media (max-width : 992px) {
+    .home{
+        margin-top: 65px;
+    }
+    .container , .large-container{
+        padding: 0 15px;
+      
+    }
+}
+
+@media (max-width : 576px) {
+    .home{
+        margin-top: 60px;
+    }
 }

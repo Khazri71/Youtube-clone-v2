@@ -21,6 +21,8 @@
 .sidebar .shorcut-links  .shorcut-link{
     padding: 7px;
     border-radius: 9px;
+    margin-bottom: 2px;
+   
   
 }
 .sidebar .shorcut-links  .shorcut-link:hover{
@@ -31,10 +33,16 @@
 .sidebar .shorcut-links  .shorcut-link .sid-icon{
     font-size: 23px;
     margin-right: 18px;
+    margin-left: 4px;
+   
 }
 
 .sidebar .shorcut-links  .shorcut-link .sid-text{
     font-size: 14px;
+}
+
+.sidebar .shorcut-links  .shorcut-link.active{
+    background-color: #eeeeeeb0;
 }
 .sidebar hr{
     width: 60%;
@@ -73,3 +81,20 @@
     font-size: 14px;
     margin-left: 15px;
 }
+
+/* Responsive */
+@media (max-width:992px) {
+    .sidebar{
+        display: none;
+    }
+    .sidebar .shorcut-links  .shorcut-link{
+        padding: 3px;
+    }
+}
+@media (max-width:1296px){
+    .sidebar .shorcut-links  .shorcut-link{
+          padding: 5px; 
+          width: 40px;
+    }
+}
+

@@ -1,14 +1,16 @@
 .cards {
-
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(290px, 1fr));
     grid-column-gap: 16px;
     grid-row-gap: 30px;
+   
 }
 .cards .card{
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
+   
 }
 .cards .card:hover{
     background-color: #ededed;
@@ -16,6 +18,7 @@
 
 .cards .card >img{
    width: 100%;
+   height: 220px;
    border-radius: 10px;
 }
 .cards .card .content{
@@ -39,9 +42,10 @@
 }
 .cards .card .content .info h2{
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 8px 0;
     margin-left: 50px;
+    color:#000;
 }
 .cards .card .content .info h3 , .cards .card .content .info p{
     font-size: 14px;
@@ -54,5 +58,16 @@
     font-size: 19px;
     margin-top: 12px;
     margin-left: 3px;
+    color:#000;
    
+}
+
+/* Responsive */
+@media (max-width : 992px) {
+    .cards .card{
+        padding: 0;
+    }
+    .cards .card .content .info p{
+        margin-bottom: 0;
+    }
 }

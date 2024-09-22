@@ -14,18 +14,18 @@ import { useResultContext } from '../../Contexts/ResultContextProvider'
 const Sidebar = () => {
  
 
-  const {sidIsOpen} = useResultContext();
+  const {sidIsOpen , category , setCategory} = useResultContext();
 
   const sidLinks = [
-    {icon:  <GoHome />    , text:"Home"},
-    {icon:  <IoGameControllerOutline />    , text:"Gaming"},
-    {icon:  <MdOutlineDirectionsCarFilled />    , text:"Automobiles"},
-    {icon:  <TfiCup />    , text:"Sports"},
-    {icon:  <BiTv />    , text:"Entertainement"},
-    {icon:  <MdOutlineIndeterminateCheckBox />    , text:"Technologies"},
-    {icon:  <IoMusicalNoteOutline />    , text:"Music"},
-    {icon:  <PiReadCvLogo />    , text:"Blogs"},
-    {icon:  <IoNewspaperOutline />    , text:"News"}
+    {icon:  <GoHome />    , text:"Home" , catID:0},
+    {icon:  <IoGameControllerOutline />    , text:"Gaming" , catID:20},
+    {icon:  <MdOutlineDirectionsCarFilled />    , text:"Automobiles" ,  catID:2},
+    {icon:  <TfiCup />    , text:"Sports" ,  catID:17},
+    {icon:  <BiTv />    , text:"Entertainement" ,  catID:24},
+    {icon:  <MdOutlineIndeterminateCheckBox />    , text:"Technologies" , catID:28},
+    {icon:  <IoMusicalNoteOutline />    , text:"Music" ,  catID:10},
+    {icon:  <PiReadCvLogo />    , text:"Blogs" ,  catID:22},
+    {icon:  <IoNewspaperOutline />    , text:"News" , catID:25}
   ]
 
 
@@ -45,8 +45,8 @@ const Sidebar = () => {
       <>
       <div className={`sidebar  ${sidIsOpen ? "" : "small-sidebar"}`}>
         <div className="shorcut-links">
-          {sidLinks.map(({icon , text} , index) => (
-            <div key={index} className="shorcut-link flex-div">
+          {sidLinks.map(({icon , text , catID} , index) => (
+            <div key={index} className= {`shorcut-link flex-div    ${catID === category ? "active" : ""}`}  onClick={() => setCategory(catID)}>
                <div className="sid-icon">
                   {icon}
                </div>
@@ -55,7 +55,9 @@ const Sidebar = () => {
   
           ))}
         </div>
+
         <hr />
+
         <span>Subscribed</span>
 
 
